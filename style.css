@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@400;500;600;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navigation-bar {
+  /* background-color: #5edf7e; */
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 300px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgb(74, 236, 123);
+  border-bottom: 1px solid rgb(6, 161, 40);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navigation-bar .logo img {
+  height: 60px;
+}
+.navigation-bar .logo {
+  transition: 0.2s;
+}
+
+.navigation-bar .logo:hover {
+  transform: scale(1.1);
+}
+
+.navigation-bar .links a {
+  text-decoration: none;
+  color: rgb(6, 141, 36);
+  padding-left: 20px;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+.navigation-bar .links a:active {
+  color: black;
+}
+
+.events {
+  min-height: 110vh;
+}
+
+.img {
+  height: 110vh;
+  background-image: url(/images/1.jpg);
+  background-size: 100% 100%;
+}
+
+.goals {
+  /* background-color: rgba(51, 231, 51, 0.541); */
+  padding: 30px;
+  min-height: 70vh;
+
+  background-image: radial-gradient(#caf5c5 85%, transparent 20%);
+  background-size: 50px 50px;
+}
+
+.goals h1 {
+  text-align: center;
+  font-size: 4em;
+  color: rgba(255, 255, 255, 0.8);
+
+  text-shadow: 1px 0 #50684e, -1px 0 #50684e, 0 1px #50684e, 0 -1px #50684e,
+    1px 1px #50684e, -1px -1px #50684e, 1px -1px #50684e, -1px 1px #50684e;
+}
+.goals hr {
+  display: block;
+  height: 10px;
+  border: 0;
+  border-top: 10px solid rgb(1, 92, 45);
+  margin: 1em auto;
+  padding: 0;
+  width: 15em;
+}
+.goals_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid black;
+  margin: 1em;
+  display: flex;
+  width: 50%;
+  height: 80%;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.532);
+}
+
+.card img {
+  width: 30%;
+  border-right: 2px solid black;
+  padding: 10px;
+  /* background-color: rgba(49, 139, 26, 0.452); */
+  background: linear-gradient(to right, rgb(142, 226, 142), rgb(255, 255, 255));
+
+  transition: 0.3s;
+}
+
+.card:hover img {
+  background-color: rgba(49, 139, 26, 0.732);
+}
+
+.card:hover {
+  transform: scale(1.06);
+}
+
+.goals_cards .words {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  /* margin-left: 25px; */
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.join {
+  position: relative;
+  padding: 20px;
+  min-height: 70vh;
+}
+
+.join::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/images/3.jpeg);
+  background-size: 100% 130%;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.join h1 {
+  text-align: center;
+  font-size: 4em;
+  color: #50684e;
+}
+
+.join hr {
+  display: block;
+  height: 10px;
+  border: 0;
+  border-top: 10px solid #50684e;
+  margin: 1em auto;
+  padding: 0;
+  width: 33em;
+}
+
+.part {
+  display: flex;
+  /* background-color: rgb(179, 236, 184); */
+  padding: 20px;
+}
+
+.part .words {
+  width: 70%;
+  margin-left: 30px;
+}
+.part .words h1 {
+  color: #50684e;
+  font-size: 4em;
+  text-align: left;
+  text-shadow: 3px 0 #fff, -3px 0 #fff, 0 3px #fff, 0 -3px #fff, 3px 3px #fff,
+    -3px -3px #fff, 3px -3px #fff, -3px 3px #fff;
+}
+
+.part .words p {
+  font-size: 1.6em;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+
+  text-shadow: 3px 0 #50684e, -3px 0 #50684e, 0 3px #50684e, 0 -3px #50684e,
+    3px 3px #50684e, -3px -3px #50684e, 3px -3px #50684e, -3px 3px #50684e;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  position: absolute;
+  right: 90px;
+  bottom: 40px;
+}
+
+.btn button {
+  width: 11em;
+  height: 3em;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: white;
+  transition: 0.3s;
+}
+.btn button:hover {
+  background-color: #6ce961;
+  transform: scale(1.11);
+  cursor: pointer;
+}
+
+.foot {
+  background-color: rgba(60, 148, 38, 0.719);
+  position: relative;
+  padding: 30px 30px 10px 30px;
+  box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.4);
+}
+.foot span {
+  display: inline-block;
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: white;
+  transform: translateX(50%);
+  right: 50%; 
+}
+
+.final {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  justify-content: space-between;
+
+  margin-bottom: -20px;
+}
+
+.final .con {
+  margin: 0px 110px;
+}
+.final .con img {
+  width: 100px;
+  margin: 20px 10px;
+}
+
+.follow h3 {
+  font-size: 1.5em;
+  margin-bottom: 80px;
+}
+
+.con h3 {
+  font-size: 1.5em;
+  color: rgb(80, 104, 78);
+}
+.con .social {
+  margin-top: 2.2em;
+}
+
+.con .social a {
+  font-size: 1.3em;
+  padding-right: 10px;
+  color: white;
+}
+
+.con .home {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+.con .home i {
+  color: white;
+  margin-right: 20px;
+}
+.home p {
+  font-weight: 400;
+  color: white;
+}
+
+.con .mail {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.con .mail i {
+  color: white;
+  margin-right: 20px;
+}
+.con .mail a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+.copyright {
+  color: rgb(80, 104, 78);
+  text-align: center;
+  margin-top: 20px;
+}
+/* --------------------------------------------------------
+-------------------------------------------------------- */
+
+.contact-bk {
+  min-height: 70vh;
+  background: url(/images/uni.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-bk h1 {
+  margin-top: 90px;
+  font-size: 4.5em;
+  color: #ffffff;
+  padding: 30px 0 25px 0;
+}
+
+.map {
+  padding-top: 100px;
+  background-image: radial-gradient(
+    #ebf0ff 20%,
+    transparent 30%
+  ); /* set the dotted pattern */
+  background-size: 30px 30px; /* set the size of the dots */
+  text-align: center;
+  background-color: #ffffff;
+  padding-bottom: 30px;
+}
+.map h1 {
+  font-size: 3em;
+  color: rgba(60, 148, 38, 0.719);
+  padding: 30px 0 25px 0;
+}
+
+.g-map {
+  padding: 5px;
+}
+
+.sub-data {
+  background-color: rgb(245, 245, 245);
+  padding-bottom: 3em;
+}
+
+.sub-data h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3em;
+  color: rgba(60, 148, 38, 0.719);
+  padding: 30px 0px;
+}
+
+.the-data {
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.the-data .element {
+  margin: 15px;
+}
+
+.the-data .element label {
+  margin-right: 150px;
+  font-size: 1.3em;
+}
+
+.the-data .element label span {
+  color: red;
+  font-size: 0.8em;
+}
+
+.the-data .element input {
+  width: 600px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+.the-data .element textarea {
+  width: 600px;
+}
+
+.the-data .element button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+}
